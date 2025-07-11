@@ -59,4 +59,9 @@ const services = [
             <p class="text-gray-600 text-center">{{ service.description }}</p>
         </div>
     </div>
+    <div class="flex flex-col items-center justify-center bg-gradient-to-r from-indigo-600 to-red-600 p-8">
+        <h1 class="mt-8 mb-8 text-4xl text-white md:text-8xl">Design and code with AI</h1>
+        <div class="text-md text-center text-gray-300 md:text-xl">With Canva you can design, generate, and work on anything.</div>
+        <button class="border-2 border-white text-white rounded-lg px-3 py-2 mt-3 cursor-pointer hover:text-black hover:bg-white">Design with AI</button>
+    </div>
 </template>
