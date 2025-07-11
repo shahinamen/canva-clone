@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from 'vue';
-
+import { useRoute } from 'vue-router';
+const route = useRoute();
+const isActive = (path) => route.path === path ? 'text-indigo-600' : 'text-gray-700';
 const mobileOpen = ref(false);
 const templateOpen = ref(false);
 </script>
@@ -21,7 +23,10 @@ const templateOpen = ref(false);
         <!-- Desktop Menu -->
         <nav class="hidden md:flex space-x-6">
           <div class="relative group">
-            <span class="cursor-pointer font-medium text-gray-700 hover:text-black">Templates</span>
+            <div class="inline-flex items-center gap-x-1 cursor-pointer font-medium text-gray-700 hover:text-black">
+  <span>Templates</span>
+  <i class="pi pi-chevron-down mt-1"></i>
+</div>
             <!-- Dropdown -->
             <div
               class="absolute left-0 top-full mt-2 w-48 bg-white border rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all"
@@ -31,9 +36,8 @@ const templateOpen = ref(false);
               <a href="#" class="block px-4 py-2 hover:bg-gray-100">Social Media</a>
             </div>
           </div>
-          <a href="#" class="font-medium text-gray-700 hover:text-black">Features</a>
-          <a href="#" class="font-medium text-gray-700 hover:text-black">Learn</a>
-          <a href="#" class="font-medium text-gray-700 hover:text-black">Pricing</a>
+          <RouterLink to="/help-center" :class="['font-medium hover:text-black', isActive('/help-center')]">Help</RouterLink>
+          <RouterLink to="/pricing" :class="['font-medium hover:text-black', isActive('/pricing')]">Pricing</RouterLink>
         </nav>
 
         <!-- Right Side -->
@@ -45,7 +49,7 @@ const templateOpen = ref(false);
 
           <!-- Mobile Menu Button -->
           <button
-            class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-black"
+            class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 cursor-pointer hover:text-black"
             @click="mobileOpen = !mobileOpen"
           >
             <svg v-if="!mobileOpen" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"

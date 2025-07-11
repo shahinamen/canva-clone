@@ -15,6 +15,12 @@ const router = createRouter({
         name: 'help-center',
         component: () => import('../views/HelpCenterView.vue'),
         meta: { title: 'Vue - Tailwind | Help Center' }
+    },
+    {
+        path: '/pricing',
+        name: 'pricing',
+        component: () => import('../views/PricingView.vue'),
+        meta: { title: 'Vue - Tailwind | Pricing' }
     }
   ],
 })
