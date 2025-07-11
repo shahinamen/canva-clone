@@ -13,11 +13,11 @@ const templateOpen = ref(false);
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
         <div class="flex-shrink-0">
-          <img
+          <RouterLink to="/"><img
             class="h-8 w-auto"
             src="https://static.canva.com/web/images/8439b51bb7a19f6e65ce1064bc37c197.svg"
             alt="Canva"
-          />
+          /></RouterLink>
         </div>
 
         <!-- Desktop Menu -->
