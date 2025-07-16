@@ -21,6 +21,24 @@ const router = createRouter({
         name: 'pricing',
         component: () => import('../views/PricingView.vue'),
         meta: { title: 'Vue - Tailwind | Pricing' }
+    },
+    {
+        path: '/business',
+        name: 'business',
+        component: () => import('../views/BusinessView.vue'),
+        meta: { title: 'Vue - Tailwind | Business' }
+    },
+    {
+        path: '/education',
+        name: 'education',
+        component: () => import('../views/EducationView.vue'),
+        meta: { title: 'Vue - Tailwind | Education' }
+    },
+    {
+        path: '/social-media',
+        name: 'social-media',
+        component: () => import('../views/SocialMediaView.vue'),
+        meta: { title: 'Vue - Tailwind | Help Center' }
     }
   ],
 })

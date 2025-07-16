@@ -31,9 +31,9 @@ const templateOpen = ref(false);
             <div
               class="absolute left-0 top-full mt-2 w-48 bg-white border rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all"
             >
-              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Business</a>
-              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Education</a>
-              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Social Media</a>
+            <RouterLink to="/business" :class="['font-medium block px-4 py-2 hover:text-black', isActive('/business')]">Business</RouterLink>
+            <RouterLink to="/education" :class="['font-medium block px-4 py-2 hover:text-black', isActive('/education')]">Education</RouterLink>
+            <RouterLink to="/social-media" :class="['font-medium block px-4 py-2 hover:text-black', isActive('/social-media')]">Social Media</RouterLink>
             </div>
           </div>
           <RouterLink to="/help-center" :class="['font-medium hover:text-black', isActive('/help-center')]">Help</RouterLink>
@@ -82,13 +82,12 @@ const templateOpen = ref(false);
           </svg>
         </div>
         <div v-if="templateOpen" class="pl-4 mt-1 space-y-1">
-          <a href="#" class="block py-1 text-sm text-gray-600">Business</a>
-          <a href="#" class="block py-1 text-sm text-gray-600">Education</a>
-          <a href="#" class="block py-1 text-sm text-gray-600">Social Media</a>
+          <RouterLink to="/business" :class="['font-medium block px-2 py-1 hover:text-black', isActive('/business')]">Business</RouterLink>
+          <RouterLink to="/education" :class="['font-medium block px-2 py-1 hover:text-black', isActive('/education')]">Education</RouterLink>
+            <RouterLink to="/social-media" :class="['font-medium block px-2 py-1 hover:text-black', isActive('/social-media')]">Social Media</RouterLink>
         </div>
-        <a href="#" class="block py-1 text-gray-700 font-medium">Features</a>
-        <a href="#" class="block py-1 text-gray-700 font-medium">Learn</a>
-        <a href="#" class="block py-1 text-gray-700 font-medium">Pricing</a>
+        <RouterLink to="/help-center" :class="['font-medium block py-1 hover:text-black', isActive('/help-center')]">Help</RouterLink>
+        <RouterLink to="/pricing" :class="['font-medium block py-1 hover:text-black', isActive('/pricing')]">Pricing</RouterLink>
         <a href="#" class="block py-2 text-sm text-gray-600">Log in</a>
         <button class="w-full bg-[#8C30F5] hover:bg-[#6c1dcc] text-white px-4 py-2 rounded-full text-sm font-semibold mt-2">
           Sign up
