@@ -45,7 +45,7 @@ const services = [
 
 <template>
     <div class="flex flex-col items-center justify-center bg-gradient-to-r from-red-100 to-indigo-100 p-8">
-        <h1 class="mt-8 mb-8 text-4xl md:text-8xl">
+        <h1 class="mt-8 mb-8 text-3xl md:text-5xl">
             What will you 
             <div class="bg-gradient-to-r from-red-600 to-indigo-600 bg-clip-text text-transparent">design today?</div>
         </h1>
@@ -74,12 +74,12 @@ const services = [
         </div>
     </div>
     <div class="flex flex-col items-center justify-center bg-gradient-to-r from-indigo-600 to-red-600 p-8">
-        <h1 class="mt-8 mb-8 text-4xl text-white md:text-8xl">Design and code with AI</h1>
+        <h1 class="mt-8 mb-8 text-2xl text-white md:text-4xl">Design and code with AI</h1>
         <div class="text-md text-center text-gray-300 md:text-xl">With Canva you can design, generate, and work on anything.</div>
         <button class="border-2 border-white text-white rounded-lg px-3 py-2 mt-3 cursor-pointer hover:text-black hover:bg-white">Design with AI</button>
     </div>
     <div class="flex flex-col items-center justify-center bg-gradient-to-r from-red-100 to-indigo-100 p-8">
-        <h1 class="mt-8 mb-8 text-4xl md:text-8xl">What will you create?</h1>
+        <h1 class="mt-8 mb-8 text-3xl md:text-5xl">What will you create?</h1>
         <div class="text-md text-center text-gray-600 md:text-xl">With Canva you can design, generate, and work on anything.</div>
         <button class="border-2 border-indigo-600 rounded-full px-3 py-2 mt-3 cursor-pointer hover:text-white hover:bg-indigo-600">Get Started</button>
     </div>

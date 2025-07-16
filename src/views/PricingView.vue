@@ -74,7 +74,7 @@ const card = [
 </script>
 <template>
     <div class="flex flex-col items-center justify-center bg-gradient-to-bl from-[#8C30F5] to-[#6c1dcc] text-white">
-        <h1 class="text-2xl py-10 md:text-3xl fw-bold">Design any thing with the right plan</h1>
+        <h1 class="text-3xl py-10 md:text-5xl fw-bold">Design any thing with the right plan</h1>
     </div>
     <div class="mt-8 mb-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-4 px-4">

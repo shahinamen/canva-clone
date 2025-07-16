@@ -45,7 +45,7 @@ const services = [
 
 <template>
     <div class="flex flex-col items-center justify-center bg-gradient-to-r from-red-100 to-indigo-100 p-8">
-        <h1 class="mt-8 mb-8 text-4xl text-center md:text-8xl">
+        <h1 class="mt-8 mb-8 text-3xl text-center md:text-5xl">
             Education Design Page
             <div class="bg-gradient-to-r from-red-600 to-indigo-600 bg-clip-text text-transparent mb-4">
                 What will you design today?
