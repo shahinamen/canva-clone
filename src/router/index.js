@@ -39,6 +39,12 @@ const router = createRouter({
         name: 'social-media',
         component: () => import('../views/SocialMediaView.vue'),
         meta: { title: 'Vue - Tailwind | Help Center' }
+    },
+    {
+        path: '/login',
+        name: 'login',
+        component: () => import('../views/LoginView.vue'),
+        meta: { title: 'Vue - Tailwind | Login' }
     }
   ],
 })

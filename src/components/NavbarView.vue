@@ -42,8 +42,8 @@ const templateOpen = ref(false);
 
         <!-- Right Side -->
         <div class="flex items-center space-x-4">
-          <a href="#" class="text-gray-600 hover:text-black text-sm font-medium hidden md:block">Log in</a>
-          <button class="bg-[#8C30F5] hover:bg-[#6c1dcc] text-white px-4 py-1.5 rounded-full text-sm font-semibold hidden md:block">
+          <RouterLink to="/login" :class="['font-medium block  px-4 py-2 hover:text-black', isActive('/login')]">Login</RouterLink>
+          <button class="bg-[#8C30F5] hover:bg-[#6c1dcc] text-white px-4 py-1.5 rounded-full cursor-pointer text-sm font-semibold hidden md:block">
             Sign up
           </button>
 
@@ -88,7 +88,7 @@ const templateOpen = ref(false);
         </div>
         <RouterLink to="/help-center" :class="['font-medium block py-1 hover:text-black', isActive('/help-center')]">Help</RouterLink>
         <RouterLink to="/pricing" :class="['font-medium block py-1 hover:text-black', isActive('/pricing')]">Pricing</RouterLink>
-        <a href="#" class="block py-2 text-sm text-gray-600">Log in</a>
+        <RouterLink to="/login" :class="['font-medium block py-1 hover:text-black', isActive('/login')]">Login</RouterLink>
         <button class="w-full bg-[#8C30F5] hover:bg-[#6c1dcc] text-white px-4 py-2 rounded-full text-sm font-semibold mt-2">
           Sign up
         </button>
